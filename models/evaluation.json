@@ -1,0 +1,180 @@
+{
+  "dataset": "dataset_pasien_tulang.csv",
+  "total_data_used": 310,
+  "train_rows": 248,
+  "test_rows": 62,
+  "features": [
+    "pelvic_incidence",
+    "sacral_slope",
+    "degree_spondylolisthesis"
+  ],
+  "target": "class",
+  "class_names": [
+    "Rendah",
+    "Sedang",
+    "Tinggi"
+  ],
+  "random_state": 42,
+  "test_size": 0.2,
+  "models": {
+    "knn": {
+      "accuracy": 0.7419354838709677,
+      "classification_report": {
+        "Rendah": {
+          "precision": 0.7142857142857143,
+          "recall": 0.9523809523809523,
+          "f1-score": 0.8163265306122449,
+          "support": 21.0
+        },
+        "Sedang": {
+          "precision": 0.6111111111111112,
+          "recall": 0.55,
+          "f1-score": 0.5789473684210527,
+          "support": 20.0
+        },
+        "Tinggi": {
+          "precision": 0.9375,
+          "recall": 0.7142857142857143,
+          "f1-score": 0.8108108108108109,
+          "support": 21.0
+        },
+        "accuracy": 0.7419354838709677,
+        "macro avg": {
+          "precision": 0.7542989417989419,
+          "recall": 0.7388888888888889,
+          "f1-score": 0.7353615699480361,
+          "support": 62.0
+        },
+        "weighted avg": {
+          "precision": 0.756608422939068,
+          "recall": 0.7419354838709677,
+          "f1-score": 0.7378843796500842,
+          "support": 62.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          20,
+          1,
+          0
+        ],
+        [
+          8,
+          11,
+          1
+        ],
+        [
+          0,
+          6,
+          15
+        ]
+      ]
+    },
+    "decision_tree": {
+      "accuracy": 1.0,
+      "classification_report": {
+        "Rendah": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 21.0
+        },
+        "Sedang": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 20.0
+        },
+        "Tinggi": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 21.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 62.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 62.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          21,
+          0,
+          0
+        ],
+        [
+          0,
+          20,
+          0
+        ],
+        [
+          0,
+          0,
+          21
+        ]
+      ]
+    },
+    "naive_bayes": {
+      "accuracy": 0.8709677419354839,
+      "classification_report": {
+        "Rendah": {
+          "precision": 0.9545454545454546,
+          "recall": 1.0,
+          "f1-score": 0.9767441860465116,
+          "support": 21.0
+        },
+        "Sedang": {
+          "precision": 0.7727272727272727,
+          "recall": 0.85,
+          "f1-score": 0.8095238095238095,
+          "support": 20.0
+        },
+        "Tinggi": {
+          "precision": 0.8888888888888888,
+          "recall": 0.7619047619047619,
+          "f1-score": 0.8205128205128205,
+          "support": 21.0
+        },
+        "accuracy": 0.8709677419354839,
+        "macro avg": {
+          "precision": 0.872053872053872,
+          "recall": 0.8706349206349207,
+          "f1-score": 0.8689269386943805,
+          "support": 62.0
+        },
+        "weighted avg": {
+          "precision": 0.8736559139784946,
+          "recall": 0.8709677419354839,
+          "f1-score": 0.8698850536810026,
+          "support": 62.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          21,
+          0,
+          0
+        ],
+        [
+          1,
+          17,
+          2
+        ],
+        [
+          0,
+          5,
+          16
+        ]
+      ]
+    }
+  }
+}
