@@ -1,0 +1,21 @@
+# Virtual environment
+.venv/
+venv/
+ENV/
+env/
+
+# Byte-compiled / Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archives
+*.zip
+*.rar
+*.tar.gz
+
+# IDE and OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -2,7 +2,8 @@
 
 ## Isi folder
 - `app.py`: antarmuka Streamlit, evaluasi, dan prediksi data baru.
-- `train_model.py`: melatih KNN, Decision Tree, dan Gaussian Naive Bayes serta menyimpan model `.pkl`.
+- `naive_bayes_text.py`: modul implementasi Categorical Naïve Bayes (diskritisasi teks & Laplace smoothing).
+- `train_model.py`: melatih KNN, Decision Tree, dan Categorical Naïve Bayes serta menyimpan model `.pkl`.
 - `dataset_pasien_tulang.csv`: dataset 3 kelas.
 - `requirements.txt`: pustaka Python yang dibutuhkan.
 - `models/`: akan dibuat otomatis setelah pelatihan, berisi file model `.pkl` dan `evaluation.json`.

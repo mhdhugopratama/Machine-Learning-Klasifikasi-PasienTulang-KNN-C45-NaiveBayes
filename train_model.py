@@ -7,7 +7,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.naive_bayes import GaussianNB
+from naive_bayes_text import CategoricalTextNaiveBayes
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -53,7 +53,7 @@ def main():
             ("classifier", KNeighborsClassifier(n_neighbors=5)),
         ]),
         "decision_tree": DecisionTreeClassifier(random_state=RANDOM_STATE),
-        "naive_bayes": GaussianNB(),
+        "naive_bayes": CategoricalTextNaiveBayes(),
     }
 
     MODEL_DIR.mkdir(exist_ok=True)
